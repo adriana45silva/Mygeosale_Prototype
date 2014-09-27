@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface PrincipalViewController : UIViewController
+@interface PrincipalViewController : UIViewController <UITextFieldDelegate>{
+
+    IBOutlet UIImageView *uiiv_Logotipo;
+    
+}
+
+@property(weak,nonatomic) IBOutlet UITextField *uitf_Usuario;
+
+@property(weak, nonatomic) IBOutlet UITextField *uitf_Senha;
+
+
+// Botão Entrar
+-(IBAction)Entrar;
+
+//Botão para Cadastro
+-(IBAction)Cadastro;
+
+// Ação BG da tela
+- (IBAction)backgroundTap:(id)sender;
 
 @end

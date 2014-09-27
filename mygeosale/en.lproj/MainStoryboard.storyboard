@@ -1,21 +1,167 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Principal View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="PrincipalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qMm-Kw-btb"/>
+                        <viewControllerLayoutGuide type="bottom" id="gl6-jF-Cv2"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAq-ZV-HfM">
+                                <rect key="frame" x="87" y="303" width="147" height="30"/>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Entrar" destination="2" eventType="touchUpInside" id="XbP-VA-o2d"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Usuário:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rku-dF-DW3">
+                                <rect key="frame" x="30" y="193" width="260" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="3UF-Ei-eoF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Senha:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ot3-vz-cqP">
+                                <rect key="frame" x="30" y="232" width="260" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="yC2-g2-2Kv"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-6b-C6g">
+                                <rect key="frame" x="30" y="77" width="260" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="733-Jp-ffT">
+                                <rect key="frame" x="16" y="416" width="288" height="30"/>
+                                <state key="normal" title="Não possuí usuário? Cadastre-se aqui!">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cadastro" destination="2" eventType="touchUpInside" id="ZH4-dl-1AI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="M1f-nm-hEW" appends="YES" id="0JG-x9-5Sx"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="uiiv_Logotipo" destination="eTX-6b-C6g" id="ab0-vW-ffp"/>
+                        <outlet property="uitf_Senha" destination="ot3-vz-cqP" id="G0h-MH-Nm3"/>
+                        <outlet property="uitf_Usuario" destination="rku-dF-DW3" id="jIx-vL-vty"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="M1f-nm-hEW">
+                    <connections>
+                        <action selector="backgroundTap:" destination="2" id="Eor-6t-3kJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-15" y="0.0"/>
+        </scene>
+        <!--Cadastro View Controller-->
+        <scene sceneID="ozT-Z8-pA9">
+            <objects>
+                <viewController storyboardIdentifier="CadastroViewController" id="Av5-b4-2qr" customClass="CadastroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c8A-J6-WbB"/>
+                        <viewControllerLayoutGuide type="bottom" id="nPM-bZ-rEJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="txj-Wq-hjh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CADASTRO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acq-2d-2Q3">
+                                <rect key="frame" x="113" y="82" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Usuário:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-0g-6UK">
+                                <rect key="frame" x="30" y="145" width="260" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Senha:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGY-bd-3k2">
+                                <rect key="frame" x="30" y="184" width="260" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Confirmar Senha:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQS-5L-d0Z">
+                                <rect key="frame" x="30" y="223" width="260" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Data de Nascimento:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm5-wj-cej">
+                                <rect key="frame" x="30" y="262" width="260" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-yb-COa">
+                                <rect key="frame" x="87" y="457" width="147" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="CadastroViewController" translatesAutoresizingMaskIntoConstraints="NO" id="DFT-pJ-FUN">
+                                <rect key="frame" x="44" y="302" width="220" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKf-j2-F3C">
+                                <rect key="frame" x="20" y="37" width="46" height="30"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoVoltar" destination="Av5-b4-2qr" eventType="touchUpInside" id="1I7-bv-5Gg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sexo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jao-N1-wgX">
+                                <rect key="frame" x="135" y="334" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="70b-xV-OPB" appends="YES" id="cVI-G8-L2j"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="uipv_Sexo" destination="DFT-pJ-FUN" id="kJb-rk-ooW"/>
+                        <outlet property="uitf_CadastroConfirmaSenha" destination="lQS-5L-d0Z" id="bfq-ac-vpV"/>
+                        <outlet property="uitf_CadastroDtNascimento" destination="Tm5-wj-cej" id="jTZ-KB-79q"/>
+                        <outlet property="uitf_CadastroSenha" destination="xGY-bd-3k2" id="6yY-kY-sGv"/>
+                        <outlet property="uitf_CadastroUsuario" destination="CjE-0g-6UK" id="rXR-Z7-Be8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxp-br-1JW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="70b-xV-OPB">
+                    <connections>
+                        <action selector="backgroundTap" destination="Av5-b4-2qr" id="Og8-0l-ZYU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="343" y="0.0"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
