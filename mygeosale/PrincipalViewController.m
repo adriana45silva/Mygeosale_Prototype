@@ -91,16 +91,16 @@
 }
 
 // Ação para retirar o teclado da tela clicando BG
-//- (IBAction)backgroundTap:(id)sender {
-//    
-//    [self.view endEditing:YES];
-//}
+- (IBAction)backgroundTap:(id)sender {
+    
+    [self.view endEditing:YES];
+}
 
 // Ação para retirar o teclado da tela clicando no Botão Retorno do teclado
-//-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
 
-  //  [textField resignFirstResponder];
-    //return YES;
-//}
+    [textField resignFirstResponder];
+    return YES;
+}
 
 @end
