@@ -94,8 +94,6 @@
 		A73EC8B419C10A3D00B9153A = {
 			isa = PBXGroup;
 			children = (
-				D8AE62F119D6F91400BA00BA /* Bolts.framework */,
-				D8AE62F219D6F91400BA00BA /* Parse.framework */,
 				A73EC8C619C10A3D00B9153A /* mygeosale */,
 				A73EC8BF19C10A3D00B9153A /* Frameworks */,
 				A73EC8BE19C10A3D00B9153A /* Products */,
@@ -113,6 +111,8 @@
 		A73EC8BF19C10A3D00B9153A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE62F119D6F91400BA00BA /* Bolts.framework */,
+				D8AE62F219D6F91400BA00BA /* Parse.framework */,
 				D8AE630519D6F9C300BA00BA /* SystemConfiguration.framework */,
 				D8AE630319D6F9B500BA00BA /* StoreKit.framework */,
 				D8AE630119D6F9AA00BA00BA /* Security.framework */,
