@@ -27,11 +27,11 @@
     return self;
 }
 
-- (IBAction)botaoVoltar{
-
-    [self dismissViewControllerAnimated:YES completion:nil];
-
-}
+//- (IBAction)botaoVoltar{
+//
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//
+//}
 
 - (IBAction)backgroundTap{
     
@@ -55,6 +55,8 @@
     // Connect data
     self.uipv_Sexo.dataSource = self;
     self.uipv_Sexo.delegate = self;
+    
+//        self.title = @"Cadastre-se";
     
 }
 
