@@ -30,6 +30,7 @@
 		AACF269F19D9BDB300DCC094 /* GoogleMapsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */; };
 		AACF26A119D9CB3000DCC094 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF26A019D9CB3000DCC094 /* Social.framework */; };
 		AACF26A319D9CB4500DCC094 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF26A219D9CB4500DCC094 /* Accounts.framework */; };
+		AACF26AA19D9CF6500DCC094 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */; };
 		AAFC2F7219D99B6800169568 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFC2F7119D99B6800169568 /* Default.png */; };
 		D80D076D19CDCD4900CB1ED6 /* logotipo.png in Resources */ = {isa = PBXBuildFile; fileRef = D80D076C19CDCD4900CB1ED6 /* logotipo.png */; };
 		D80D077019CDCFFD00CB1ED6 /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D076F19CDCFFD00CB1ED6 /* CadastroViewController.m */; };
@@ -76,6 +77,7 @@
 		AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsTestViewController.m; sourceTree = "<group>"; };
 		AACF26A019D9CB3000DCC094 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		AACF26A219D9CB4500DCC094 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
 		AAFC2F7119D99B6800169568 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		D80D076C19CDCD4900CB1ED6 /* logotipo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotipo.png; sourceTree = "<group>"; };
 		D80D076E19CDCFFD00CB1ED6 /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		A73EC8B419C10A3D00B9153A = {
 			isa = PBXGroup;
 			children = (
+				AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */,
 				A73EC8C619C10A3D00B9153A /* mygeosale */,
 				A73EC8BF19C10A3D00B9153A /* Frameworks */,
 				A73EC8BE19C10A3D00B9153A /* Products */,
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACF26AA19D9CF6500DCC094 /* FBMissingSymbols.m in Sources */,
 				A73EC8CD19C10A3D00B9153A /* main.m in Sources */,
 				AACF269F19D9BDB300DCC094 /* GoogleMapsTestViewController.m in Sources */,
 				A73EC8D119C10A3D00B9153A /* PrincipalAppDelegate.m in Sources */,
@@ -407,6 +411,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/GoogleMaps-iOS-1.8.1",
 					"$(PROJECT_DIR)/GoogleMaps-iOS-1.8.1/GoogleMapsSDKDemos",
+					/Users/adrianas/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mygeosale/mygeosale-Prefix.pch";
@@ -428,6 +433,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/GoogleMaps-iOS-1.8.1",
 					"$(PROJECT_DIR)/GoogleMaps-iOS-1.8.1/GoogleMapsSDKDemos",
+					/Users/adrianas/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mygeosale/mygeosale-Prefix.pch";
