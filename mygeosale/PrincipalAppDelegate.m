@@ -18,6 +18,10 @@
     [Parse setApplicationId:@"dbGEzgOZ287QoxRxCQwvdeWqkr7RztYRQ5vRAKIp"
                   clientKey:@"4kwJRWU4otkPm89zABUp2QuEgoriBDMfcy0t3UBv"];
     
+    //Google Maps API Key
+    
+    [GMSServices provideAPIKey:@"AIzaSyDbfCBCSoF97xCYtA9qpR81j5zR8-84Nyw"];
+    
     return YES;
 }
 							

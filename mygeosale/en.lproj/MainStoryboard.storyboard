@@ -126,6 +126,9 @@
                                 <state key="normal" title="Salvar">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="M0R-N0-cSX" kind="push" id="zNX-3M-RYh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sexo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jao-N1-wgX">
                                 <rect key="frame" x="135" y="283" width="50" height="21"/>
@@ -183,6 +186,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjS-Pt-WeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-15" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RHH-fW-SvL">
+            <objects>
+                <viewController id="M0R-N0-cSX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nYM-l5-hrD"/>
+                        <viewControllerLayoutGuide type="bottom" id="dCP-Ne-0mA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zQA-WX-G1M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZqI-44-uZ0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7C-jd-mAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304" y="0.0"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

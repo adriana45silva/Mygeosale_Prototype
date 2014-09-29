@@ -50,15 +50,23 @@
     // Do any additional setup after loading the view.
     
     // Initialize Data
-    _pickerData = @[@"Feminino", @"Masculino"];
+//    _pickerData = @[@"Feminino", @"Masculino"];
     
     // Connect data
-    self.uipv_Sexo.dataSource = self;
-    self.uipv_Sexo.delegate = self;
+//    self.uipv_Sexo.dataSource = self;
+//    self.uipv_Sexo.delegate = self;
     
-//        self.title = @"Cadastre-se";
     
 }
+
+//- (IBAction)selecionaSexo {
+//
+//    NSString *category =[UISegmentedControl titleForSegmentAtIndex: [UISegmentedControl selectedSegmentIndex]];
+//    
+////    [UISegmentedControl titleForSegmentAtIndex:int];
+//    
+//    [segmentedControl titleForSegmentAtIndex:[segmentedControl selectedSegmentIndex]];
+//}
 
 - (void)didReceiveMemoryWarning
 {

@@ -10,15 +10,17 @@
 
 @interface CadastroViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIPickerView *uipv_Sexo;
+//@property (weak, nonatomic) IBOutlet UIPickerView *uipv_Sexo;
 @property (weak, nonatomic) IBOutlet UITextField *uitf_CadastroUsuario;
 @property (weak, nonatomic) IBOutlet UITextField *uitf_CadastroSenha;
 @property (weak, nonatomic) IBOutlet UITextField *uitf_CadastroConfirmaSenha;
 @property (weak, nonatomic) IBOutlet UITextField *uitf_CadastroDtNascimento;
-
+@property (weak, nonatomic) IBOutlet UISegmentedControl *uisc_Sexo;
 
 
 -(IBAction)botaoVoltar;
 - (IBAction)backgroundTap;
+- (IBAction)selecionaSexo;
+
 
 @end
