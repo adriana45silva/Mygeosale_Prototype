@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-mygeosale
-=======
 Mygeosale
->>>>>>> b105da989538340228be216e6ef74da091ca463a
-=========
+
+
+Prototype version of an academic app developed in iOS and Android for a fictional corporation named Mygeosale.
