@@ -187,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="-15" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Google Maps Test View Controller-->
         <scene sceneID="RHH-fW-SvL">
             <objects>
-                <viewController id="M0R-N0-cSX" sceneMemberID="viewController">
+                <viewController id="M0R-N0-cSX" customClass="GoogleMapsTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nYM-l5-hrD"/>
                         <viewControllerLayoutGuide type="bottom" id="dCP-Ne-0mA"/>

@@ -8,7 +8,10 @@
 
 #import "PrincipalViewController.h"
 #import "CadastroViewController.h"
+#import "GoogleMapsTestViewController.h"
 #import "Parse/Parse.h"
+
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface PrincipalViewController ()
 

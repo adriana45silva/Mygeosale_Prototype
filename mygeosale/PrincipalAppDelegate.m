@@ -8,6 +8,8 @@
 
 #import "PrincipalAppDelegate.h"
 #import "Parse/Parse.h"
+#import "GoogleMaps/GoogleMaps.h"
+#import "GoogleMapsTestViewController.h"
 
 @implementation PrincipalAppDelegate
 

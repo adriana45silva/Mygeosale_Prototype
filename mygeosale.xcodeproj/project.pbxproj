@@ -27,6 +27,9 @@
 		AACF269819D9AC6900DCC094 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF269719D9AC6900DCC094 /* libc++.dylib */; };
 		AACF269A19D9AC7300DCC094 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF269919D9AC7300DCC094 /* libicucore.dylib */; };
 		AACF269C19D9AC8500DCC094 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF269B19D9AC8500DCC094 /* OpenGLES.framework */; };
+		AACF269F19D9BDB300DCC094 /* GoogleMapsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */; };
+		AACF26A119D9CB3000DCC094 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF26A019D9CB3000DCC094 /* Social.framework */; };
+		AACF26A319D9CB4500DCC094 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF26A219D9CB4500DCC094 /* Accounts.framework */; };
 		AAFC2F7219D99B6800169568 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFC2F7119D99B6800169568 /* Default.png */; };
 		D80D076D19CDCD4900CB1ED6 /* logotipo.png in Resources */ = {isa = PBXBuildFile; fileRef = D80D076C19CDCD4900CB1ED6 /* logotipo.png */; };
 		D80D077019CDCFFD00CB1ED6 /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D076F19CDCFFD00CB1ED6 /* CadastroViewController.m */; };
@@ -69,6 +72,10 @@
 		AACF269719D9AC6900DCC094 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		AACF269919D9AC7300DCC094 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		AACF269B19D9AC8500DCC094 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		AACF269D19D9BDB300DCC094 /* GoogleMapsTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsTestViewController.h; sourceTree = "<group>"; };
+		AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsTestViewController.m; sourceTree = "<group>"; };
+		AACF26A019D9CB3000DCC094 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AACF26A219D9CB4500DCC094 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		AAFC2F7119D99B6800169568 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		D80D076C19CDCD4900CB1ED6 /* logotipo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotipo.png; sourceTree = "<group>"; };
 		D80D076E19CDCFFD00CB1ED6 /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
@@ -91,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACF26A319D9CB4500DCC094 /* Accounts.framework in Frameworks */,
+				AACF26A119D9CB3000DCC094 /* Social.framework in Frameworks */,
 				D8AE630619D6F9C300BA00BA /* SystemConfiguration.framework in Frameworks */,
 				D8AE630019D6F99900BA00BA /* QuartzCore.framework in Frameworks */,
 				AACF269C19D9AC8500DCC094 /* OpenGLES.framework in Frameworks */,
@@ -140,6 +149,8 @@
 		A73EC8BF19C10A3D00B9153A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AACF26A219D9CB4500DCC094 /* Accounts.framework */,
+				AACF26A019D9CB3000DCC094 /* Social.framework */,
 				AACF269B19D9AC8500DCC094 /* OpenGLES.framework */,
 				AACF269919D9AC7300DCC094 /* libicucore.dylib */,
 				AACF269719D9AC6900DCC094 /* libc++.dylib */,
@@ -174,6 +185,8 @@
 				A73EC8CF19C10A3D00B9153A /* PrincipalAppDelegate.h */,
 				A73EC8D019C10A3D00B9153A /* PrincipalAppDelegate.m */,
 				A73EC8D819C10A3E00B9153A /* MainStoryboard.storyboard */,
+				AACF269D19D9BDB300DCC094 /* GoogleMapsTestViewController.h */,
+				AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */,
 				D80D076E19CDCFFD00CB1ED6 /* CadastroViewController.h */,
 				D80D076F19CDCFFD00CB1ED6 /* CadastroViewController.m */,
 				D80D076C19CDCD4900CB1ED6 /* logotipo.png */,
@@ -301,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73EC8CD19C10A3D00B9153A /* main.m in Sources */,
+				AACF269F19D9BDB300DCC094 /* GoogleMapsTestViewController.m in Sources */,
 				A73EC8D119C10A3D00B9153A /* PrincipalAppDelegate.m in Sources */,
 				A73EC8DD19C10A3E00B9153A /* PrincipalViewController.m in Sources */,
 				D80D077019CDCFFD00CB1ED6 /* CadastroViewController.m in Sources */,
@@ -399,6 +413,7 @@
 				INFOPLIST_FILE = "mygeosale/mygeosale-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				New_Setting = "";
+				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -419,6 +434,8 @@
 				INFOPLIST_FILE = "mygeosale/mygeosale-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				New_Setting = "";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
