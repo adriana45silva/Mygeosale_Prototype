@@ -18,6 +18,7 @@
 		A73EC8DA19C10A3E00B9153A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73EC8D819C10A3E00B9153A /* MainStoryboard.storyboard */; };
 		A73EC8DD19C10A3E00B9153A /* PrincipalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73EC8DC19C10A3E00B9153A /* PrincipalViewController.m */; };
 		AA11AC2919E1B4D200A9B067 /* ServicosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */; };
+		AA11AC2B19E1C26200A9B067 /* kylie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA11AC2A19E1C26200A9B067 /* kylie.jpg */; };
 		AACF268A19D9ABC100DCC094 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF268919D9ABC100DCC094 /* GoogleMaps.framework */; };
 		AACF268C19D9ABEC00DCC094 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AACF268B19D9ABEC00DCC094 /* GoogleMaps.bundle */; };
 		AACF268E19D9AC1E00DCC094 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF268D19D9AC1E00DCC094 /* AVFoundation.framework */; };
@@ -66,6 +67,7 @@
 		A73EC8DC19C10A3E00B9153A /* PrincipalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrincipalViewController.m; sourceTree = "<group>"; };
 		AA11AC2719E1B4D200A9B067 /* ServicosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicosViewController.h; sourceTree = "<group>"; };
 		AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicosViewController.m; sourceTree = "<group>"; };
+		AA11AC2A19E1C26200A9B067 /* kylie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kylie.jpg; sourceTree = "<group>"; };
 		AACF268919D9ABC100DCC094 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		AACF268B19D9ABEC00DCC094 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		AACF268D19D9AC1E00DCC094 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -187,6 +189,7 @@
 		A73EC8C619C10A3D00B9153A /* mygeosale */ = {
 			isa = PBXGroup;
 			children = (
+				AA11AC2A19E1C26200A9B067 /* kylie.jpg */,
 				AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */,
 				A73EC8CF19C10A3D00B9153A /* PrincipalAppDelegate.h */,
 				A73EC8D019C10A3D00B9153A /* PrincipalAppDelegate.m */,
@@ -310,6 +313,7 @@
 				AAFC2F7219D99B6800169568 /* Default.png in Resources */,
 				A73EC8D719C10A3E00B9153A /* Default-568h@2x.png in Resources */,
 				A73EC8DA19C10A3E00B9153A /* MainStoryboard.storyboard in Resources */,
+				AA11AC2B19E1C26200A9B067 /* kylie.jpg in Resources */,
 				AACF268C19D9ABEC00DCC094 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
