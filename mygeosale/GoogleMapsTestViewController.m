@@ -38,22 +38,53 @@
     
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
-                                                            longitude:151.20
-                                                                 zoom:6];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-23.5748192
+                                                            longitude:-46.659218
+                                                                 zoom:17];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+
+    // get the users location
     mapView_.myLocationEnabled = YES;
+    
+    // show accessibility items on map
+    mapView_.accessibilityElementsHidden = NO;
+    NSLog(@"User's location: %@", mapView_.myLocation);
     self.view = mapView_;
     
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(-33.86, 151.20);
-    marker.title = @"Sydney";
-    marker.snippet = @"Australia";
+    marker.position = CLLocationCoordinate2DMake(-23.5748192, -46.659218);
+//    marker.title = @"Sydney";
+//    marker.snippet = @"Australia";
     marker.map = mapView_;
     
+    [mapView_ addObserver:self
+               forKeyPath:@"myLocation"
+                  options:NSKeyValueObservingOptionNew
+                  context:NULL];
+    // Ask for My Location data after the map has already been added to the UI.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        mapView_.myLocationEnabled = YES;
+    });
+
     
-}
+    }
+
+
+
+//- (void)observeValueForKeyPath:(NSString *)keyPath {
+//        ofObject:(id)object
+//        change:(NSDictionary *)change
+//        context:(void *)context {
+//    if (!firstLocationUpdate_) {
+//        // If the first location update has not yet been recieved, then jump to that
+//        // location.
+//        firstLocationUpdate_ = YES;
+//        CLLocation *location = [change objectForKey:NSKeyValueChangeNewKey];
+//        mapView_.camera = [GMSCameraPosition cameraWithTarget:location.coordinate
+//                                                         zoom:14];
+//    }
+
 
 - (void)didReceiveMemoryWarning
 {

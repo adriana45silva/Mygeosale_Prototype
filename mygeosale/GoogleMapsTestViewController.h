@@ -11,6 +11,8 @@
 
 @interface GoogleMapsTestViewController : UIViewController
 
+//- (void)observeValueForKeyPath:(NSString *)keyPath;
+
 @end
 
 

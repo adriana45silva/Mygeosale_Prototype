@@ -17,6 +17,7 @@
 		A73EC8D719C10A3E00B9153A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A73EC8D619C10A3E00B9153A /* Default-568h@2x.png */; };
 		A73EC8DA19C10A3E00B9153A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73EC8D819C10A3E00B9153A /* MainStoryboard.storyboard */; };
 		A73EC8DD19C10A3E00B9153A /* PrincipalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73EC8DC19C10A3E00B9153A /* PrincipalViewController.m */; };
+		AA11AC2919E1B4D200A9B067 /* ServicosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */; };
 		AACF268A19D9ABC100DCC094 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF268919D9ABC100DCC094 /* GoogleMaps.framework */; };
 		AACF268C19D9ABEC00DCC094 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AACF268B19D9ABEC00DCC094 /* GoogleMaps.bundle */; };
 		AACF268E19D9AC1E00DCC094 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF268D19D9AC1E00DCC094 /* AVFoundation.framework */; };
@@ -63,6 +64,8 @@
 		A73EC8D919C10A3E00B9153A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A73EC8DB19C10A3E00B9153A /* PrincipalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrincipalViewController.h; sourceTree = "<group>"; };
 		A73EC8DC19C10A3E00B9153A /* PrincipalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrincipalViewController.m; sourceTree = "<group>"; };
+		AA11AC2719E1B4D200A9B067 /* ServicosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicosViewController.h; sourceTree = "<group>"; };
+		AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicosViewController.m; sourceTree = "<group>"; };
 		AACF268919D9ABC100DCC094 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		AACF268B19D9ABEC00DCC094 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		AACF268D19D9AC1E00DCC094 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -77,7 +80,7 @@
 		AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsTestViewController.m; sourceTree = "<group>"; };
 		AACF26A019D9CB3000DCC094 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		AACF26A219D9CB4500DCC094 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
+		AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBMissingSymbols.m; path = ../FBMissingSymbols.m; sourceTree = "<group>"; };
 		AAFC2F7119D99B6800169568 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		D80D076C19CDCD4900CB1ED6 /* logotipo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotipo.png; sourceTree = "<group>"; };
 		D80D076E19CDCFFD00CB1ED6 /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE62FA19D6F97100BA00BA /* CoreLocation.framework in Frameworks */,
 				AACF26A319D9CB4500DCC094 /* Accounts.framework in Frameworks */,
 				AACF26A119D9CB3000DCC094 /* Social.framework in Frameworks */,
 				D8AE630619D6F9C300BA00BA /* SystemConfiguration.framework in Frameworks */,
@@ -111,7 +115,6 @@
 				AACF269619D9AC5E00DCC094 /* ImageIO.framework in Frameworks */,
 				AACF269419D9AC5300DCC094 /* GLKit.framework in Frameworks */,
 				AACF269219D9AC4200DCC094 /* CoreText.framework in Frameworks */,
-				D8AE62FA19D6F97100BA00BA /* CoreLocation.framework in Frameworks */,
 				AACF269019D9AC2C00DCC094 /* CoreData.framework in Frameworks */,
 				AACF268E19D9AC1E00DCC094 /* AVFoundation.framework in Frameworks */,
 				D8AE630419D6F9B500BA00BA /* StoreKit.framework in Frameworks */,
@@ -134,7 +137,6 @@
 		A73EC8B419C10A3D00B9153A = {
 			isa = PBXGroup;
 			children = (
-				AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */,
 				A73EC8C619C10A3D00B9153A /* mygeosale */,
 				A73EC8BF19C10A3D00B9153A /* Frameworks */,
 				A73EC8BE19C10A3D00B9153A /* Products */,
@@ -185,9 +187,12 @@
 		A73EC8C619C10A3D00B9153A /* mygeosale */ = {
 			isa = PBXGroup;
 			children = (
+				AACF26A919D9CF6500DCC094 /* FBMissingSymbols.m */,
 				A73EC8CF19C10A3D00B9153A /* PrincipalAppDelegate.h */,
 				A73EC8D019C10A3D00B9153A /* PrincipalAppDelegate.m */,
 				A73EC8D819C10A3E00B9153A /* MainStoryboard.storyboard */,
+				AA11AC2719E1B4D200A9B067 /* ServicosViewController.h */,
+				AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */,
 				AACF269D19D9BDB300DCC094 /* GoogleMapsTestViewController.h */,
 				AACF269E19D9BDB300DCC094 /* GoogleMapsTestViewController.m */,
 				D80D076E19CDCFFD00CB1ED6 /* CadastroViewController.h */,
@@ -316,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA11AC2919E1B4D200A9B067 /* ServicosViewController.m in Sources */,
 				AACF26AA19D9CF6500DCC094 /* FBMissingSymbols.m in Sources */,
 				A73EC8CD19C10A3D00B9153A /* main.m in Sources */,
 				AACF269F19D9BDB300DCC094 /* GoogleMapsTestViewController.m in Sources */,
