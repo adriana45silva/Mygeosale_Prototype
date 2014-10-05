@@ -38,8 +38,8 @@
     
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-23.5748192
-                                                            longitude:-46.659218
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-23.5740406
+                                                            longitude:-46.623408917
                                                                  zoom:17];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
 
@@ -53,7 +53,7 @@
     
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(-23.5748192, -46.659218);
+    marker.position = CLLocationCoordinate2DMake(-23.5740406, -46.623408917);
 //    marker.title = @"Sydney";
 //    marker.snippet = @"Australia";
     marker.map = mapView_;
