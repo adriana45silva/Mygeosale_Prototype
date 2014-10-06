@@ -53,7 +53,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIt-gW-V3u">
                                 <rect key="frame" x="16" y="354" width="288" height="30"/>
-                                <state key="normal" title="Não possuí usuário? Cadastre-se aqui!">
+                                <state key="normal" title="Não possui usuário? Cadastre-se aqui!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -344,7 +344,7 @@
             <objects>
                 <tabBarController definesPresentationContext="YES" id="ebs-8Q-jKn" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Perfil" id="8gO-vo-Yk2"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="x0G-GR-Dmg">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>

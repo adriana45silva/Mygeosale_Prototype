@@ -12,6 +12,10 @@
 
 @interface GoogleMapsTestViewController () <GMSMapViewDelegate>
 
+//@property (strong, nonatomic) GMSMapView *mapView;
+
+//@property (strong, nonatomic) NSURLSession *markerSession;
+
 @end
 
 @implementation GoogleMapsTestViewController {
@@ -38,59 +42,80 @@
     
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
+
+    self.view = mapView_;
+    mapView_.settings.myLocationButton = YES;
+    mapView_.settings.compassButton = YES;
+    
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-23.5740406
                                                             longitude:-46.623408917
                                                                  zoom:17];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-
-    // get the users location
+    
+    mapView_.delegate = self;
+//
+//    // get the users location
     mapView_.myLocationEnabled = YES;
-    
-    // show accessibility items on map
-    mapView_.accessibilityElementsHidden = NO;
+//
+//    // show accessibility items on map
+//    mapView_.accessibilityElementsHidden = NO;
     NSLog(@"User's location: %@", mapView_.myLocation);
-    self.view = mapView_;
-    
+//
+//    
+//    
+//    
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(-23.5740406, -46.623408917);
-//    marker.title = @"Sydney";
+    marker.title = @"Sydney";
 //    marker.snippet = @"Australia";
+
+    marker.appearAnimation = kGMSMarkerAnimationPop;
     marker.map = mapView_;
     
-    [mapView_ addObserver:self
-               forKeyPath:@"myLocation"
-                  options:NSKeyValueObservingOptionNew
-                  context:NULL];
-    // Ask for My Location data after the map has already been added to the UI.
-    dispatch_async(dispatch_get_main_queue(), ^{
-        mapView_.myLocationEnabled = YES;
-    });
-
+    
+    GMSMarker *marker2 = [[GMSMarker alloc] init];
+    marker2.position = CLLocationCoordinate2DMake(-23.5742042, -46.623517218);
+    
+    marker2.appearAnimation = kGMSMarkerAnimationPop;
+    marker2.map = mapView_;
+    
+    GMSMarker *marker3 = [[GMSMarker alloc] init];
+    marker3.position = CLLocationCoordinate2DMake(-23.5733956, -46.622544718);
+    
+    marker3.appearAnimation = kGMSMarkerAnimationPop;
+    marker3.map = mapView_;
+    
+//    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+//    
+//    config.URLCache = [[NSURLCache alloc] initWithMemoryCapacity: 2 * 1024 *1024
+//                                        diskCapacity:10 * 1024 * 1024
+//                                                        diskPath:@"Marker Data"];
+//    
+//    self.markerSession = [NSURLSession sessionWithConfiguration: config];
     
     }
-
-
-
-//- (void)observeValueForKeyPath:(NSString *)keyPath {
-//        ofObject:(id)object
-//        change:(NSDictionary *)change
-//        context:(void *)context {
-//    if (!firstLocationUpdate_) {
-//        // If the first location update has not yet been recieved, then jump to that
-//        // location.
-//        firstLocationUpdate_ = YES;
-//        CLLocation *location = [change objectForKey:NSKeyValueChangeNewKey];
-//        mapView_.camera = [GMSCameraPosition cameraWithTarget:location.coordinate
-//                                                         zoom:14];
-//    }
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+    // center the screen to the current user location
+- (void) mapView: (GMSMapView *) mapView  idleAtCameraPosition: (GMSCameraPosition *)camera{}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES ;
+}
+
+//- (void)viewWillLayoutSubviews {
+//    [super viewWillLayoutSubviews];
+//    
+//    self.mapView.padding =
+//    UIEdgeInsetsMake(self.topLayoutGuide.length + 5, 0, self.bottomLayoutGuide.length + 5, 0 );
+//
+//}
 
 /*
 #pragma mark - Navigation

@@ -19,6 +19,7 @@
 		A73EC8DD19C10A3E00B9153A /* PrincipalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73EC8DC19C10A3E00B9153A /* PrincipalViewController.m */; };
 		AA11AC2919E1B4D200A9B067 /* ServicosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */; };
 		AA11AC2B19E1C26200A9B067 /* kylie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA11AC2A19E1C26200A9B067 /* kylie.jpg */; };
+		AA4B100619E2E09E000111C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4B100519E2E09E000111C5 /* Images.xcassets */; };
 		AACF268A19D9ABC100DCC094 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF268919D9ABC100DCC094 /* GoogleMaps.framework */; };
 		AACF268C19D9ABEC00DCC094 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AACF268B19D9ABEC00DCC094 /* GoogleMaps.bundle */; };
 		AACF268E19D9AC1E00DCC094 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACF268D19D9AC1E00DCC094 /* AVFoundation.framework */; };
@@ -68,6 +69,7 @@
 		AA11AC2719E1B4D200A9B067 /* ServicosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicosViewController.h; sourceTree = "<group>"; };
 		AA11AC2819E1B4D200A9B067 /* ServicosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicosViewController.m; sourceTree = "<group>"; };
 		AA11AC2A19E1C26200A9B067 /* kylie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kylie.jpg; sourceTree = "<group>"; };
+		AA4B100519E2E09E000111C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AACF268919D9ABC100DCC094 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		AACF268B19D9ABEC00DCC094 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		AACF268D19D9AC1E00DCC094 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -203,6 +205,7 @@
 				D80D076C19CDCD4900CB1ED6 /* logotipo.png */,
 				A73EC8DB19C10A3E00B9153A /* PrincipalViewController.h */,
 				A73EC8DC19C10A3E00B9153A /* PrincipalViewController.m */,
+				AA4B100519E2E09E000111C5 /* Images.xcassets */,
 				A73EC8C719C10A3D00B9153A /* Supporting Files */,
 			);
 			path = mygeosale;
@@ -307,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4B100619E2E09E000111C5 /* Images.xcassets in Resources */,
 				D80D076D19CDCD4900CB1ED6 /* logotipo.png in Resources */,
 				A73EC8CB19C10A3D00B9153A /* InfoPlist.strings in Resources */,
 				A73EC8D519C10A3D00B9153A /* Default@2x.png in Resources */,
@@ -416,6 +420,8 @@
 		A73EC8E119C10A3E00B9153A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -426,7 +432,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mygeosale/mygeosale-Prefix.pch";
 				INFOPLIST_FILE = "mygeosale/mygeosale-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				New_Setting = "";
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
@@ -438,6 +444,8 @@
 		A73EC8E219C10A3E00B9153A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -448,7 +456,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mygeosale/mygeosale-Prefix.pch";
 				INFOPLIST_FILE = "mygeosale/mygeosale-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				New_Setting = "";
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";

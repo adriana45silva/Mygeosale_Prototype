@@ -8,7 +8,7 @@
 
 #import "PrincipalAppDelegate.h"
 #import "Parse/Parse.h"
-#import "GoogleMaps/GoogleMaps.h"
+#import <GoogleMaps/GoogleMaps.h>
 #import "GoogleMapsTestViewController.h"
 
 @implementation PrincipalAppDelegate
@@ -23,6 +23,11 @@
     //Google Maps API Key
     
     [GMSServices provideAPIKey:@"AIzaSyDbfCBCSoF97xCYtA9qpR81j5zR8-84Nyw"];
+    
+    
+//    GoogleMapsTestViewController *gmaps = [[GoogleMapsTestViewController alloc] init];
+//    self.window.rootViewController = gmaps;
+    
     
     return YES;
 }
